@@ -1,0 +1,122 @@
+.cke_pagewidth {
+  float: right;
+  margin: -2px 0 2px; /* so it alignes to elementspath addon'- */
+}
+
+.cke_pagewidth .cke_pagewidth_button {
+  display: inline-block;
+  padding: 3px 4px;
+  cursor: default;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  color: #484848;
+  font-weight: bold;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.cke_pagewidth .cke_pagewidth_button:hover,
+.cke_pagewidth .cke_pagewidth_button:focus,
+.cke_pagewidth .cke_pagewidth_button:active {
+  background-color: #e5e5e5;
+}
+
+.cke_pagewidth label.cke_pagewidth_value {
+  font-size: 11px;
+  font-weight: bold;
+  color: #484848;
+  width: 30px;
+  display: inline-block;
+  margin: auto 4px;
+}
+
+.cke_pagewidth input[type='range'] {
+  height: 8px;
+  -webkit-appearance: none;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.cke_pagewidth input[type='range']:focus {
+  outline: none;
+}
+.cke_pagewidth input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #bbbbbb;
+  border-radius: 0px;
+  border: 0px solid #bbb;
+}
+.cke_pagewidth input[type='range']::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #666666;
+  height: 11px;
+  width: 8px;
+  border-radius: 4px;
+  background: #666666;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4.5px;
+}
+.cke_pagewidth input[type='range']:focus::-webkit-slider-runnable-track {
+  background: #bbbbbb;
+}
+.cke_pagewidth input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #bbbbbb;
+  border-radius: 0px;
+  border: 0px solid #bbb;
+}
+.cke_pagewidth input[type='range']::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #666666;
+  height: 11px;
+  width: 8px;
+  border-radius: 4px;
+  background: #666666;
+  cursor: pointer;
+}
+.cke_pagewidth input[type='range']::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.cke_pagewidth input[type='range']::-ms-fill-lower {
+  background: #bbbbbb;
+  border: 0px solid #bbb;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+.cke_pagewidth input[type='range']::-ms-fill-upper {
+  background: #bbbbbb;
+  border: 0px solid #bbb;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+.cke_pagewidth input[type='range']::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #666666;
+  height: 11px;
+  width: 8px;
+  border-radius: 4px;
+  background: #666666;
+  cursor: pointer;
+}
+.cke_pagewidth input[type='range']:focus::-ms-fill-lower {
+  background: #bbbbbb;
+}
+.cke_pagewidth input[type='range']:focus::-ms-fill-upper {
+  background: #bbbbbb;
+}

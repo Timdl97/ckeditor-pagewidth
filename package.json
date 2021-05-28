@@ -1,0 +1,14 @@
+{
+  "name": "ckeditor-pagewidth-plugin",
+  "version": "1.0.0",
+  "description": "A word-like page width plugin for CKEditor",
+  "keywords": [
+    "CKEditor",
+    "document",
+    "pagewidth",
+    "addon",
+    "plugin"
+  ],
+  "author": "timdl97",
+  "license": "ISC"
+}

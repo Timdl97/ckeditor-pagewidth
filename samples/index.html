@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKEditor Page Width Sample</title>
+    <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+</head>
+<body>
+    <form>
+        <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
+        <script>
+            CKEDITOR.plugins.addExternal('pagewidth', window.location.pathname.replace('samples/index.html', 'pagewidth/'));
+            CKEDITOR.replace('editor1', {
+                extraPlugins: 'pagewidth',
+                contentsCss: [ 'https://cdn.ckeditor.com/4.8.0/full-all/contents.css', 'mystyles.css' ],
+                bodyClass: 'document-editor',
+                resize_maxHeight: '800',
+                resize_dir: 'both',
+                pagewidth_minZoom: 50,
+                pagewidth_maxZoom: 200,
+                pagewidth_initialZoom: 98.5465132498
+            });
+
+        </script>
+    </form>
+</body>
+</html>
