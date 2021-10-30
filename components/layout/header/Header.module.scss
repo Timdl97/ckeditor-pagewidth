@@ -1,4 +1,28 @@
 .header {
-    height: 50px;
-    @apply bg-green-300;
+  @apply w-full py-1 lg:py-6;
+  @apply sticky top-0;
+
+  &.stuck {
+    @apply bg-green-700; // TODO color
+  }
+}
+
+.headerContainer {
+  @apply container mx-auto;
+  @apply flex justify-between;
+}
+
+.brandSection {
+}
+
+.navSection {
+}
+
+.navList {
+  @apply flex;
+
+  .navItem {
+    @apply mx-2 px-2 py-2;
+    @apply uppercase text-white font-bold;
+  }
 }

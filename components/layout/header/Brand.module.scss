@@ -1,0 +1,5 @@
+.brand {
+    @apply border-2 overflow-hidden absolute;
+    @apply shadow-lg;
+    border-color: #1E988B; // TODO variable color
+}

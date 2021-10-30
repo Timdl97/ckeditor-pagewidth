@@ -1,20 +1,46 @@
-import React from 'react'
-import headerStyles from './Header.module.scss'
+import React, { useEffect, useRef, useState } from 'react';
+import classNames from 'classnames';
+
+import { Brand } from './Brand';
+import headerStyles from './Header.module.scss';
+import { useSticky } from '../../../hooks/useSticky';
 
 type HeaderProps = {
-    sticky: boolean
-}
+  sticky: boolean;
+};
 
 const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
+  const ref = useRef(null);
+  const [isStuck] = useSticky(ref);
 
-    return <nav className={headerStyles.header}>
+  const headerClassName = classNames(
+    headerStyles.header, 
+    { [headerStyles.stuck]: !props.sticky || isStuck } 
+  );
 
-    </nav>;
-}
+  return (
+    <nav ref={ref} className={headerClassName}>
+      <div className={headerStyles.headerContainer}>
+        <div className={headerStyles.brandSection}>
+            <Brand width={180} />
+        </div>
+        <div className={headerStyles.navSection}>
+          <ul className={headerStyles.navList}>
+            <li className={headerStyles.navItem}>Info</li>
+            <li className={headerStyles.navItem}>Afdelingen</li>
+            <li className={headerStyles.navItem}>Inschrijven</li>
+            <li className={headerStyles.navItem}>Activiteiten</li>
+            <li className={headerStyles.navItem}>Contact</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
 Header.displayName = 'Header';
 Header.defaultProps = {
-    sticky: true
-}
+  sticky: true,
+};
 
 export { Header };
