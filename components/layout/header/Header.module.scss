@@ -2,6 +2,10 @@
   @apply w-full py-1 lg:py-6;
   @apply sticky top-0;
 
+  // transition background-color
+  @apply transition-colors duration-500 ease-in-out;
+  @apply motion-reduce:transition-none;
+
   &.stuck {
     @apply bg-green-700; // TODO color
   }

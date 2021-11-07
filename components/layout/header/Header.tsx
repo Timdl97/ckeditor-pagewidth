@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import classNames from 'classnames';
+import Link from 'next/link';
 
 import { Brand } from './Brand';
 import headerStyles from './Header.module.scss';
@@ -26,11 +27,31 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
         </div>
         <div className={headerStyles.navSection}>
           <ul className={headerStyles.navList}>
-            <li className={headerStyles.navItem}>Info</li>
-            <li className={headerStyles.navItem}>Afdelingen</li>
-            <li className={headerStyles.navItem}>Inschrijven</li>
-            <li className={headerStyles.navItem}>Activiteiten</li>
-            <li className={headerStyles.navItem}>Contact</li>
+            <li className={headerStyles.navItem}>
+              <Link href="/">
+                <a>Info</a>
+              </Link>
+            </li>
+            <li className={headerStyles.navItem}>
+              <Link href="/">
+                <a>Afdelingen</a>
+              </Link>
+            </li>
+            <li className={headerStyles.navItem}>
+              <Link href="/">
+                <a>Inschrijven</a>
+              </Link>
+            </li>
+            <li className={headerStyles.navItem}>
+              <Link href="/">
+                <a>Activiteiten</a>
+              </Link>
+            </li>
+            <li className={headerStyles.navItem}>
+              <Link href="/">
+                <a>Contact</a>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
