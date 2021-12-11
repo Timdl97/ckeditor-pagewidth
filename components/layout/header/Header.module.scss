@@ -2,12 +2,13 @@
   @apply w-full py-1 lg:py-6;
   @apply sticky top-0;
 
-  // transition background-color
-  @apply transition-colors duration-500 ease-in-out;
+  // transition shadow
+  @apply transition-shadow duration-500 ease-in-out;
   @apply motion-reduce:transition-none;
 
   &.stuck {
-    @apply bg-green-700; // TODO color
+    @apply bg-white; // TODO color
+    @apply shadow-md;
   }
 }
 
@@ -20,13 +21,4 @@
 }
 
 .navSection {
-}
-
-.navList {
-  @apply flex;
-
-  .navItem {
-    @apply mx-2 px-2 py-2;
-    @apply uppercase text-white font-bold;
-  }
 }

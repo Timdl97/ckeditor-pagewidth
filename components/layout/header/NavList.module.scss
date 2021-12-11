@@ -1,0 +1,32 @@
+.navList {
+    @apply flex;
+    
+    @apply text-green-700; // TODO color
+  
+    .navItem {
+      @apply mx-2 py-2;
+      @apply uppercase font-bold;
+      
+      @apply border-b-2 border-transparent;
+      @apply hover:border-green-700 focus-within:border-green-700; // TODO color
+    }
+
+  .navSubList {
+    @apply flex flex-col p-0;
+    @apply bg-white shadow-lg;
+
+    @apply border-b-2 border-green-700; // TODO color
+
+    .navItem {
+      @apply border-none;
+      @apply block text-left p-2 m-0;
+
+      @apply hover:bg-green-700 focus:bg-green-700; // TODO color
+      @apply hover:text-white focus:text-white;
+
+      // transition colors
+      @apply transition-colors duration-500 ease-in-out;
+      @apply motion-reduce:transition-none;
+    }
+  }
+}
